@@ -1,6 +1,7 @@
-sudo docker rm -f angcontain
+#sudo docker rm -f angcontain
+sudo docker rm -f $(sudo docker ps -a -q)
 if [ $? -ne 0 ] ; then
-        echo "ERROR: Docker build failed"
+        echo "ERROR: Docker delteing build"
         exit 1
 fi
 
