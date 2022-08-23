@@ -1,7 +1,7 @@
-echo "==========BUILDING THE PRODUCTION FILES ================"
-ng build
+#echo "==========BUILDING THE PRODUCTION FILES ================"
+#ng build
 echo "==========BUILDING THE IMAGE    ================"
-./buildImg.sh
+sudo ./buildImg.sh
 echo "==========RUNNING THE CONATINER ================"
-./createCont.sh
+sudo ./createCont.sh
 echo "========== DONE ================"
