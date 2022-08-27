@@ -11,9 +11,9 @@ totalAngularPackages:any;
 	constructor(private http: HttpClient) { }
 	ngOnInit() {
 	console.log("trying to conncet...............")
-		this.http.get("http://13.232.226.137:5000/").subscribe(data => {
-		//this.http.get("http://172.31.39.45:5000/home").subscribe(data => {
-		//this.	
+	//		this.http.get("http://13.232.155.224:5000/").subscribe(data => {
+		this.http.get("http://13.234.225.231:5000/").subscribe(data => {
+	//	this.http.get("http://172.31.39.45:5000/").subscribe(data => {
 			console.log("::::::::::::::::::::;",data)
    })
    }

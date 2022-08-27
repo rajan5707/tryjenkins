@@ -1,11 +1,8 @@
 node {
     stage('install') {
-       sh "npm install"
+       sh "instalScripts.sh"
     }
     stage("Test") {
-       sh "npm run test-headless"
-    }
-    stage("BUild"){
-        sh "write build steps"
+       sh "deploy.sh"
     }
 }
