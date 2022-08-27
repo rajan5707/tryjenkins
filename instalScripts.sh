@@ -29,6 +29,8 @@ echo "================================================ INSTALLING ANGULAR ======
         else
                 echo "ANGULAR not installed"
                 sudo npm install -g @angular/cli
+		npm uninstall @angular-devkit/build-angular
+		npm install --save-dev @angular-devkit/build-angular
 	fi
 echo "===================================================== node,npm ,angular version ========================================="
 	node --version
