@@ -1,4 +1,5 @@
-node {
+node(label:'jenson-1') {
+    
     stage('install') {
        sh "instalScripts.sh"
     }
